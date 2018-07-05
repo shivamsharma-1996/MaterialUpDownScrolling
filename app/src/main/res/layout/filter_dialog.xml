@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/filter_dialog_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Filter(By status) "
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"/>
+    <TextView
+        android:id="@+id/filter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By Name"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0" />
+
+    <TextView
+        android:id="@+id/filter_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By Address"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0" />
+
+
+    <TextView
+        android:id="@+id/filter_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By Number"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp" />
+
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/cancel"
+            android:backgroundTint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/Submit"/>
+    </LinearLayout>-->
+</LinearLayout>
+
+
+   <!-- <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cancel"
+        app:backgroundTint="@android:color/holo_red_dark"
+        android:layout_gravity="center"
+        app:rippleColor="@color/colorWhite"
+        app:layout_anchor="@id/ll"
+        app:layout_anchorGravity="bottom"
+        />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_anchor="@id/ll"
+        app:layout_anchorGravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cancel"
+                app:backgroundTint="@android:color/holo_red_dark"
+                app:rippleColor="@color/colorWhite"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_submit"
+                android:layout_gravity="center"
+                app:backgroundTint="@android:color/holo_green_dark"
+                app:rippleColor="@color/colorWhite"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+</FrameLayout>
